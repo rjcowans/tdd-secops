@@ -1,0 +1,47 @@
+{
+  "System": {
+    "Provider": {
+      "Name": "Microsoft-Windows-Sysmon",
+      "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"
+    },
+    "EventID": 1,
+    "Version": 5,
+    "Level": 4,
+    "Task": 1,
+    "Opcode": 0,
+    "Keywords": "0x8000000000000000",
+    "TimeCreated": {
+      "SystemTime": "2023-10-05T13:45:30.0000000Z"
+    },
+    "EventRecordID": 123456,
+    "Execution": {
+      "ProcessID": 4567,
+      "ThreadID": 7890
+    },
+    "Channel": "Microsoft-Windows-Sysmon/Operational",
+    "Computer": "ExampleHost",
+    "Security": {
+      "UserID": "S-1-5-18"
+    }
+  },
+  "EventData": {
+    "RuleName": "-",
+    "UtcTime": "2023-10-05 13:45:30.000",
+    "ProcessGuid": "{F823ABC1-D1D9-5B6E-0000-00105A605C00}",
+    "ProcessId": 5678,
+    "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "powershell.exe -enc \"-exe`[System`.%Env`iro`nment]::GetFolderPath(`\"%Temp%^`%^\")\"",
+    "CurrentDirectory": "C:\\Windows\\System32\\",
+    "User": "EXAMPLE\\Administrator",
+    "LogonGuid": "{ABCD1234-EF56-789A-BCDE-000000000000}",
+    "LogonId": "0x123456",
+    "TerminalSessionId": 1,
+    "IntegrityLevel": "High",
+    "Hashes": "SHA1=ABCDEF1234567890ABCDEF1234567890ABCDEF12",
+    "ParentProcessGuid": "{ABC12345-6789-DEFA-1234-567890ABCDEF}",
+    "ParentProcessId": 4321,
+    "ParentImage": "C:\\Windows\\explorer.exe",
+    "ParentCommandLine": "C:\\Windows\\Explorer.EXE",
+    "ParentUser": "EXAMPLE\\User"
+  }
+}
